@@ -1,14 +1,151 @@
-   0.016183300s  INFO prepare_target{force=false package_id=TwoOsc v0.1.0 (D:\PROJECTS\RustProjects\TwoOsc) target="TwoOsc"}: cargo::core::compiler::fingerprint: stale: changed "D:\\PROJECTS\\RustProjects\\TwoOsc\\src\\main.rs"
-   0.016543900s  INFO prepare_target{force=false package_id=TwoOsc v0.1.0 (D:\PROJECTS\RustProjects\TwoOsc) target="TwoOsc"}: cargo::core::compiler::fingerprint:           (vs) "D:\\PROJECTS\\RustProjects\\TwoOsc\\target\\debug\\.fingerprint\\TwoOsc-2bc81cd13ee67a26\\dep-bin-TwoOsc"
-   0.016554800s  INFO prepare_target{force=false package_id=TwoOsc v0.1.0 (D:\PROJECTS\RustProjects\TwoOsc) target="TwoOsc"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 13428755988, nanos: 0 } < FileTime { seconds: 13428755998, nanos: 0 }
-   0.018636400s  INFO prepare_target{force=false package_id=TwoOsc v0.1.0 (D:\PROJECTS\RustProjects\TwoOsc) target="TwoOsc"}: cargo::core::compiler::fingerprint: fingerprint dirty for TwoOsc v0.1.0 (D:\PROJECTS\RustProjects\TwoOsc)/Check { test: false }/TargetInner { name: "TwoOsc", doc: true, ..: with_path("D:\\PROJECTS\\RustProjects\\TwoOsc\\src\\main.rs", Edition2024) }
-   0.018692300s  INFO prepare_target{force=false package_id=TwoOsc v0.1.0 (D:\PROJECTS\RustProjects\TwoOsc) target="TwoOsc"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "D:\\PROJECTS\\RustProjects\\TwoOsc\\target\\debug\\.fingerprint\\TwoOsc-2bc81cd13ee67a26\\dep-bin-TwoOsc", reference_mtime: FileTime { seconds: 13428755988, nanos: 0 }, stale: "D:\\PROJECTS\\RustProjects\\TwoOsc\\src\\main.rs", stale_mtime: FileTime { seconds: 13428755998, nanos: 0 } }))
-   0.024443100s  INFO prepare_target{force=false package_id=TwoOsc v0.1.0 (D:\PROJECTS\RustProjects\TwoOsc) target="TwoOsc"}: cargo::core::compiler::fingerprint: stale: changed "D:\\PROJECTS\\RustProjects\\TwoOsc\\src\\main.rs"
-   0.024461000s  INFO prepare_target{force=false package_id=TwoOsc v0.1.0 (D:\PROJECTS\RustProjects\TwoOsc) target="TwoOsc"}: cargo::core::compiler::fingerprint:           (vs) "D:\\PROJECTS\\RustProjects\\TwoOsc\\target\\debug\\.fingerprint\\TwoOsc-5130da050016b664\\dep-test-bin-TwoOsc"
-   0.024469600s  INFO prepare_target{force=false package_id=TwoOsc v0.1.0 (D:\PROJECTS\RustProjects\TwoOsc) target="TwoOsc"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 13428755988, nanos: 0 } < FileTime { seconds: 13428755998, nanos: 0 }
-   0.024585100s  INFO prepare_target{force=false package_id=TwoOsc v0.1.0 (D:\PROJECTS\RustProjects\TwoOsc) target="TwoOsc"}: cargo::core::compiler::fingerprint: fingerprint dirty for TwoOsc v0.1.0 (D:\PROJECTS\RustProjects\TwoOsc)/Check { test: true }/TargetInner { name: "TwoOsc", doc: true, ..: with_path("D:\\PROJECTS\\RustProjects\\TwoOsc\\src\\main.rs", Edition2024) }
-   0.024602700s  INFO prepare_target{force=false package_id=TwoOsc v0.1.0 (D:\PROJECTS\RustProjects\TwoOsc) target="TwoOsc"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "D:\\PROJECTS\\RustProjects\\TwoOsc\\target\\debug\\.fingerprint\\TwoOsc-5130da050016b664\\dep-test-bin-TwoOsc", reference_mtime: FileTime { seconds: 13428755988, nanos: 0 }, stale: "D:\\PROJECTS\\RustProjects\\TwoOsc\\src\\main.rs", stale_mtime: FileTime { seconds: 13428755998, nanos: 0 } }))
+   0.118384200s  INFO prepare_target{force=false package_id=TwoOsc v0.1.0 (D:\PROJECTS\RustProjects\TwoOsc) target="TwoOsc"}: cargo::core::compiler::fingerprint: fingerprint error for TwoOsc v0.1.0 (D:\PROJECTS\RustProjects\TwoOsc)/Check { test: false }/TargetInner { name: "TwoOsc", doc: true, ..: with_path("D:\\PROJECTS\\RustProjects\\TwoOsc\\src\\main.rs", Edition2024) }
+   0.118457000s  INFO prepare_target{force=false package_id=TwoOsc v0.1.0 (D:\PROJECTS\RustProjects\TwoOsc) target="TwoOsc"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\PROJECTS\RustProjects\TwoOsc\target\debug\.fingerprint\TwoOsc-4f70a973282001f3\bin-TwoOsc`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_libgit2_prerelease
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+   0.131695600s  INFO prepare_target{force=false package_id=rodio v0.17.3 target="rodio"}: cargo::core::compiler::fingerprint: fingerprint error for rodio v0.17.3/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("rodio", ["lib"], "C:\\Users\\prash\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\rodio-0.17.3\\src\\lib.rs", Edition2021) }
+   0.131733300s  INFO prepare_target{force=false package_id=rodio v0.17.3 target="rodio"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\PROJECTS\RustProjects\TwoOsc\target\debug\.fingerprint\rodio-0d0f26a53d8ff120\lib-rodio`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_libgit2_prerelease
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: git_midx_writer_dump
+  18: git_filter_source_repo
+  19: git_midx_writer_dump
+  20: BaseThreadInitThunk
+  21: RtlUserThreadStart
+   0.132328300s  INFO prepare_target{force=false package_id=cpal v0.15.3 target="cpal"}: cargo::core::compiler::fingerprint: fingerprint error for cpal v0.15.3/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("cpal", ["lib"], "C:\\Users\\prash\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\cpal-0.15.3\\src\\lib.rs", Edition2021) }
+   0.132349100s  INFO prepare_target{force=false package_id=cpal v0.15.3 target="cpal"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\PROJECTS\RustProjects\TwoOsc\target\debug\.fingerprint\cpal-e5de08315094ba65\lib-cpal`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_libgit2_prerelease
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: git_midx_writer_dump
+  19: git_filter_source_repo
+  20: git_midx_writer_dump
+  21: BaseThreadInitThunk
+  22: RtlUserThreadStart
+   0.133506900s  INFO prepare_target{force=false package_id=windows v0.54.0 target="windows"}: cargo::core::compiler::fingerprint: fingerprint error for windows v0.54.0/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("windows", ["lib"], "C:\\Users\\prash\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\windows-0.54.0\\src\\lib.rs", Edition2021) }
+   0.133527700s  INFO prepare_target{force=false package_id=windows v0.54.0 target="windows"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\PROJECTS\RustProjects\TwoOsc\target\debug\.fingerprint\windows-ad77d6d8c8784d10\lib-windows`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_libgit2_prerelease
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: git_midx_writer_dump
+  20: git_filter_source_repo
+  21: git_midx_writer_dump
+  22: BaseThreadInitThunk
+  23: RtlUserThreadStart
+   0.168363200s  INFO prepare_target{force=false package_id=TwoOsc v0.1.0 (D:\PROJECTS\RustProjects\TwoOsc) target="TwoOsc"}: cargo::core::compiler::fingerprint: fingerprint error for TwoOsc v0.1.0 (D:\PROJECTS\RustProjects\TwoOsc)/Check { test: true }/TargetInner { name: "TwoOsc", doc: true, ..: with_path("D:\\PROJECTS\\RustProjects\\TwoOsc\\src\\main.rs", Edition2024) }
+   0.168408000s  INFO prepare_target{force=false package_id=TwoOsc v0.1.0 (D:\PROJECTS\RustProjects\TwoOsc) target="TwoOsc"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\PROJECTS\RustProjects\TwoOsc\target\debug\.fingerprint\TwoOsc-a05e555ad9491560\test-bin-TwoOsc`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_libgit2_prerelease
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+    Checking windows v0.54.0
+    Checking cpal v0.15.3
+    Checking rodio v0.17.3
     Checking TwoOsc v0.1.0 (D:\PROJECTS\RustProjects\TwoOsc)
-error: could not compile `TwoOsc` (bin "TwoOsc" test) due to 1 previous error; 1 warning emitted
-warning: build failed, waiting for other jobs to finish...
-error: could not compile `TwoOsc` (bin "TwoOsc") due to 1 previous error; 1 warning emitted
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 21.17s
